@@ -240,21 +240,21 @@ Type any command to continue...`,
 
   return (
     <div className="mb-6 terminal-mono mr-2">
-      <div className="text-white text-xl font-bold">
+      <div className="text-[#A9B7C6] text-xl font-bold">
         Adithya P Navada
       </div>
-      <div className="text-gray-400 mb-4">
+      <div className="text-[#6A8759] mb-4">
         Software Developer (SDE-1)
       </div>
-      <div className="border-t border-green-500/30 mb-4"></div>
-      <div className="text-green-400 mb-2">
+      <div className="border-t border-[#4A5568] mb-4"></div>
+      <div className="text-[#6A8759] mb-2">
         Hi, I&apos;m Adithya.
       </div>
-      <div className="text-gray-300 mb-4 leading-relaxed">
+      <div className="text-[#A9B7C6] mb-4 leading-relaxed">
         A full-stack developer specializing in scalable backend systems, workflow automation, and AI-integrated platforms. 
         I build production-ready SaaS applications using modern technologies like Next.js, Fastify, PostgreSQL, and Docker.
       </div>
-      <div className="text-green-400">
+      <div className="text-[#6A8759]">
         Welcome to my interactive portfolio terminal.
       </div>
       <div>
@@ -262,11 +262,11 @@ Type any command to continue...`,
       </div>
     </div>
   );
-};
+ };
 
  return (
   <div
-    className="bg-black text-green-400 h-full flex flex-col terminal-mono"
+    className="bg-[#0a0a0a] text-[#00ff41] h-full flex flex-col terminal-mono"
     onClick={() => !isMobile && inputRef.current?.focus()}
   >
     {/* Terminal Content */}
@@ -279,13 +279,13 @@ Type any command to continue...`,
       {history.map((entry, index) => (
         <div key={index}>
           <div className="flex items-center terminal-prompt">
-            <span className="text-blue-400">user@portfolio</span>
-            <span className="text-white">:</span>
-            <span className="text-yellow-400">~</span>
-            <span className="text-green-400">$ </span>
-            <span className="text-white">{entry.command}</span>
+            <span className="text-[#6A8759]">user@portfolio</span>
+            <span className="text-[#A9B7C6]">:</span>
+            <span className="text-[#CC7832]">~</span>
+            <span className="text-[#6A8759]">$ </span>
+            <span className="text-[#A9B7C6]">{entry.command}</span>
           </div>
-          <div className="mt-2 text-gray-300 whitespace-pre-wrap terminal-mono">
+          <div className="mt-2 text-[#A9B7C6] whitespace-pre-wrap terminal-mono">
             {entry.isTyping ? displayedText : entry.output}
             {entry.isTyping && <span className="animate-pulse">|</span>}
           </div>
@@ -295,12 +295,12 @@ Type any command to continue...`,
       {/* Current Input Display - Only show on desktop */}
       {!isMobile && (
         <div className="flex items-center terminal-prompt">
-          <span className="text-blue-400">user@portfolio</span>
-          <span className="text-white">:</span>
-          <span className="text-yellow-400">~</span>
-          <span className="text-green-400">$</span>
-          <span className="text-green-400 ml-2">{input}</span>
-          <span className="animate-pulse text-green-400">|</span>
+          <span className="text-[#6A8759]">user@portfolio</span>
+          <span className="text-[#A9B7C6]">:</span>
+          <span className="text-[#CC7832]">~</span>
+          <span className="text-[#6A8759]">$</span>
+          <span className="text-[#A9B7C6] ml-2">{input}</span>
+          <span className="animate-pulse text-[#6A8759]">|</span>
         </div>
       )}
     </div>
@@ -322,7 +322,8 @@ Type any command to continue...`,
       </form>
     )}
   </div>
-);});
+);
+});
 
 Terminal.displayName = 'Terminal';
 
