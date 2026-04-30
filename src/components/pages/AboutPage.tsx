@@ -128,7 +128,7 @@ export const AboutPage = ({ openContactWindow }: AboutPageProps) => {
                       </div>
                       <span
                         className={`mt-3 px-3 py-1 rounded-full text-xs font-semibold border ${
-                          role.status === "Recent"
+                          role.status === "Current"
                             ? "bg-emerald-500/20 text-emerald-300 border-emerald-500/30"
                             : "bg-slate-700/50 text-slate-300 border-slate-600/50"
                         }`}
